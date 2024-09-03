@@ -1,0 +1,40 @@
+{
+  // https://www.typescriptlang.org/tsconfig#compilerOptions
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["es2020", "DOM"],
+    "module": "CommonJS",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "target": "es2022",
+    "types": ["node"],
+
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    // "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks":false,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "noImplicitAny": true,
+  },
+  "files": [
+    "src/utils/countTHIDays.ts",
+    "src/app.ts",
+    "src/index.ts",
+    "src/server.ts",
+    "src/data/getWeatherInfo.ts",
+    "src/utils/setCity.ts",
+    "src/utils/showCityResults.ts",
+    "src/charts/chartTHI.ts",
+    "src/data/getPrecipitation.ts",
+    "src/charts/chartPrecipitation.ts",
+    "src/tables/thiTable.ts",
+    "src/tables/precipitationTable.ts",
+  ],
+  // "include": ["src/**/*", "dist/app.js"],
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"],
+}
